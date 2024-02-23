@@ -1,0 +1,46 @@
+.card-book{
+    background-color: #fff;   
+    max-width: 1200px;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: .3rem;
+}
+
+.card-book__image{
+    width: 300px;
+}
+
+.card-book__direito__header{
+    margin-bottom: 30px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.card-book__title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card-book__author{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.card-book__author > span{
+    color: #0088aa;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-book__direito__content{
+    display: grid;
+    gap: 20px;
+}
+
+.card-book__description{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+  
