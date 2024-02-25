@@ -12,6 +12,21 @@
     width: 300px;
 }
 
+.card-book__esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-book__button-read-more{
+    background-color: #fff;
+    width: 100%;
+    padding: .3rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .card-book__direito__header{
     margin-bottom: 30px;
     padding-bottom: 1rem;
@@ -26,7 +41,6 @@
 .card-book__author{
     font-size: 1.2rem;
     font-weight: 300;
-    cursor: pointer;
 }
 
 .card-book__author > span{
@@ -34,6 +48,7 @@
     color: #0088aa;
     font-size: 1.2rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .card-book__author > span::after{
@@ -61,6 +76,35 @@
     text-align: left;
 }
   
+.card-book__problem{
+    margin-top: 30px;
+    border-top: 1px solid #aaa;
+}
+
+.card-book__problem__link{
+    position: relative;
+    color: #0088aa;
+    width: fit-content;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-book__problem__link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0088aa;
+    height: 2px;
+    width: 0;
+}
+
+.card-book__problem__link:hover::after{
+    width: 100%;
+}
+
 @media (max-width: 900px){
     .card-book{
         flex-direction: column;

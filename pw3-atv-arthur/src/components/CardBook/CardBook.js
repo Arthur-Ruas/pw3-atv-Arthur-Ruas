@@ -6,6 +6,7 @@ const CardBook = ({Image ,Titulo, Autor, Descricao}) => {
       <div className="card-book">
           <div className='card-book__esquerdo'>
               <img className="card-book__image" src={Image} alt="Capa do livro de Isaac Asimov"/>
+              <button className='card-book__button-read-more'>Ler amostra</button>
           </div>
           <div className='card-book__direito'>
               <header className='card-book__direito__header'>
@@ -14,6 +15,9 @@ const CardBook = ({Image ,Titulo, Autor, Descricao}) => {
               </header>
               <div className='card-book__direito__content'>
                 <p className="card-book__description">{Descricao}</p>
+              </div>
+              <div className='card-book__problem'>
+                <p className='card-book__problem__link'>Relatar um problema com este produto</p>
               </div>
           </div>     
       </div>
