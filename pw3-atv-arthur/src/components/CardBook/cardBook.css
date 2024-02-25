@@ -5,6 +5,7 @@
     gap: 2rem;
     padding: 2rem 3rem;
     border-radius: .3rem;
+    box-shadow: 0px 3px 5px -2px #444;
 }
 
 .card-book__image{
@@ -25,12 +26,28 @@
 .card-book__author{
     font-size: 1.2rem;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .card-book__author > span{
+    position: relative;
     color: #0088aa;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.card-book__author > span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0088aa;
+    height: 2px;
+    width: 0;
+}
+
+.card-book__author > span:hover::after{
+    width: 100%;
 }
 
 .card-book__direito__content{
